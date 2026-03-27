@@ -1,26 +1,114 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>The Living Tarot</title>    
-    <!-- THIS IS THE START OF A COMMENT BLOCK, BLOCK TO BE DELETED: Google Fonts here, example:
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    THIS IS THE END OF A COMMENT BLOCK, BLOCK TO BE DELETED -->
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    <title>The Living Tarot — Learn to Read the Cards Like They're Talking to You</title>
+    <meta name="description" content="The cards don't predict your future. They illuminate your present. Learn tarot through traditional, Vedantic, and somatic lenses with 300+ in-depth articles." />
+    <meta name="author" content="The Living Tarot Editorial" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#6A0DAD" />
+    <meta name="keywords" content="tarot learning, tarot card meanings, tarot spreads, major arcana, minor arcana, intuitive tarot, tarot practice, consciousness, tarot reading" />
+    <link rel="canonical" href="https://livingtarot.love/" />
+    <link rel="alternate" type="application/rss+xml" title="The Living Tarot RSS Feed" href="/feed.xml" />
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="The Living Tarot" />
+    <meta property="og:title" content="The Living Tarot — Learn to Read the Cards Like They're Talking to You" />
+    <meta property="og:description" content="The cards don't predict your future. They illuminate your present." />
+    <meta property="og:url" content="https://livingtarot.love/" />
+    <meta property="og:image" content="https://living-tarot.b-cdn.net/images/og/court-cards-in-relationship-readings.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Living Tarot" />
+    <meta name="twitter:description" content="The cards don't predict your future. They illuminate your present." />
+    <meta name="twitter:image" content="https://living-tarot.b-cdn.net/images/og/court-cards-in-relationship-readings.png" />
+
+    <!-- Self-hosted fonts from Bunny CDN -->
+    <link rel="preconnect" href="https://living-tarot.b-cdn.net" crossorigin />
+    <style>
+      @font-face {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('https://living-tarot.b-cdn.net/fonts/PlayfairDisplay-Regular.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('https://living-tarot.b-cdn.net/fonts/PlayfairDisplay-Bold.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url('https://living-tarot.b-cdn.net/fonts/PlayfairDisplay-Italic.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Crimson Text';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('https://living-tarot.b-cdn.net/fonts/CrimsonText-Regular.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Crimson Text';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url('https://living-tarot.b-cdn.net/fonts/CrimsonText-SemiBold.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Crimson Text';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('https://living-tarot.b-cdn.net/fonts/CrimsonText-Bold.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Crimson Text';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url('https://living-tarot.b-cdn.net/fonts/CrimsonText-Italic.woff2') format('woff2');
+      }
+    </style>
+
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "The Living Tarot",
+      "url": "https://livingtarot.love",
+      "description": "Learn to read the cards like they're talking to you. Tarot through traditional, Vedantic, and somatic lenses.",
+      "logo": "https://living-tarot.b-cdn.net/images/logo.png"
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite + SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "The Living Tarot",
+      "url": "https://livingtarot.love",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://livingtarot.love/articles?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
   </body>
-
 </html>

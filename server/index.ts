@@ -16,14 +16,29 @@ async function startServer() {
       ? path.resolve(__dirname, "public")
       : path.resolve(__dirname, "..", "dist", "public");
 
-  app.use(express.static(staticPath));
+  // Static assets with long cache
+  app.use(
+    "/assets",
+    express.static(path.join(staticPath, "assets"), {
+      maxAge: "1y",
+      immutable: true,
+    })
+  );
+
+  // Other static files with shorter cache
+  app.use(
+    express.static(staticPath, {
+      maxAge: "1h",
+    })
+  );
 
   // Handle client-side routing - serve index.html for all routes
   app.get("*", (_req, res) => {
+    res.setHeader("Cache-Control", "no-cache");
     res.sendFile(path.join(staticPath, "index.html"));
   });
 
-  const port = process.env.PORT || 3000;
+  const port = process.env.PORT || 10000;
 
   server.listen(port, () => {
     console.log(`Server running on http://localhost:${port}/`);

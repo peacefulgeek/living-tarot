@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "The Living Tarot",
+  "name_for_model": "living_tarot",
+  "description_for_human": "Learn to read the cards like they're talking to you. 300+ in-depth tarot articles through traditional, Vedantic, and somatic lenses.",
+  "description_for_model": "The Living Tarot is a comprehensive tarot education resource with 300 articles exploring tarot through three lenses: traditional symbolism, Vedantic perspective, and somatic experience. Created by Kalesh, Consciousness Teacher & Writer at kalesh.love.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://livingtarot.love/llms.txt"
+  },
+  "logo_url": "https://livingtarot.love/favicon.ico",
+  "contact_email": "",
+  "legal_info_url": "https://livingtarot.love/terms"
+}
