@@ -22,7 +22,7 @@ export default function Privacy() {
             When you visit The Living Tarot, we may collect certain information automatically, including your IP address, browser type, referring URLs, and pages visited. This data is collected through cookies and similar technologies to improve your browsing experience and analyze site traffic.
           </p>
           <p>
-            If you subscribe to our newsletter, we collect your email address. This information is stored securely and used solely for sending you updates about new content on The Living Tarot.
+            If you subscribe to our newsletter, we collect your email address. This information is stored securely on Bunny CDN storage infrastructure and used solely for sending you updates about new content on The Living Tarot.
           </p>
 
           <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">How We Use Your Information</h2>
@@ -41,7 +41,7 @@ export default function Privacy() {
 
           <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">Third-Party Services</h2>
           <p>
-            We may use third-party services for analytics and content delivery. These services may collect information about your use of our website. We do not sell your personal information to third parties.
+            We use Bunny CDN (BunnyCDN, bunny.net) for content delivery, image hosting, and data storage including newsletter subscriber information. Bunny CDN stores data in secure data centers and processes information in accordance with GDPR requirements. We do not sell your personal information to third parties.
           </p>
 
           <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">Data Security</h2>
