@@ -211,9 +211,14 @@ export default function ArticlePage() {
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
 
-            {/* Disclaimer */}
-            <div className="mt-8 p-4 border border-[var(--antique-gold)]/20 rounded bg-[var(--mystic-cream)]/50 text-xs text-[var(--deep-purple)]/50 leading-relaxed">
-              <strong>Disclaimer:</strong> This content is for educational and entertainment purposes only. It is not a substitute for professional advice. Tarot reading is a contemplative practice, not a diagnostic tool.
+            {/* Health & Educational Disclaimer */}
+            <div className="mt-8 p-5 border border-[var(--antique-gold)]/30 rounded-lg bg-gradient-to-br from-[var(--mystic-cream)] to-[var(--parchment)] shadow-sm">
+              <h4 className="font-serif text-sm text-[var(--deep-purple)] mb-2 flex items-center gap-2">
+                <span className="text-[var(--antique-gold)]">&#9670;</span> Important Notice
+              </h4>
+              <p className="text-xs text-[var(--deep-purple)]/60 leading-relaxed">
+                The content on The Living Tarot is provided for educational and informational purposes only and is not intended as a substitute for professional medical, psychological, or healthcare advice. Nothing on this site should be construed as medical advice, diagnosis, or treatment. Always consult your physician, therapist, or other qualified healthcare provider with any questions you may have regarding a medical condition or mental health concern. Reliance on any information provided by this site is solely at your own risk.
+              </p>
             </div>
 
             {/* Share Buttons */}
@@ -263,9 +268,14 @@ export default function ArticlePage() {
             <div className="lg:sticky lg:top-24 space-y-8">
               {/* Author Bio */}
               <div className="p-6 border border-[var(--antique-gold)]/30 rounded bg-[var(--mystic-cream)]">
-                <div className="w-16 h-16 rounded-full bg-[var(--royal-purple)]/20 mx-auto mb-4 flex items-center justify-center">
-                  <span className="font-serif text-2xl text-[var(--royal-purple)]">K</span>
-                </div>
+                <img
+                  src={SITE_CONFIG.author.photo}
+                  alt={SITE_CONFIG.author.name}
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 rounded-full object-cover mx-auto mb-4 border-2 border-[var(--antique-gold)]/40"
+                  loading="lazy"
+                />
                 <h3 className="font-serif text-lg text-[var(--deep-purple)] text-center mb-1">
                   {SITE_CONFIG.author.name}
                 </h3>
@@ -275,9 +285,15 @@ export default function ArticlePage() {
                 </p>
                 <a
                   href={SITE_CONFIG.author.link}
-                  className="block w-full text-center px-4 py-2 bg-[var(--royal-purple)] text-[var(--mystic-cream)] rounded text-sm font-medium hover:bg-[var(--deep-purple)] transition-colors no-underline"
+                  className="block w-full text-center px-4 py-2 bg-[var(--royal-purple)] text-[var(--mystic-cream)] rounded text-sm font-medium hover:bg-[var(--deep-purple)] transition-colors no-underline mb-2"
                 >
                   {SITE_CONFIG.author.linkText}
+                </a>
+                <a
+                  href="https://kalesh.love"
+                  className="block w-full text-center px-4 py-2 border border-[var(--royal-purple)] text-[var(--royal-purple)] rounded text-sm font-medium hover:bg-[var(--royal-purple)]/10 transition-colors no-underline"
+                >
+                  Book a Session
                 </a>
               </div>
 

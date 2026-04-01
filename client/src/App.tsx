@@ -17,6 +17,8 @@ const QuizPage = lazy(() => import("./pages/QuizPage"));
 const DailyDraw = lazy(() => import("./pages/DailyDraw"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
+const Tools = lazy(() => import("./pages/Tools"));
+const Assessments = lazy(() => import("./pages/Assessments"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 function LoadingFallback() {
@@ -42,6 +44,8 @@ function Router() {
         <Route path="/quizzes" component={QuizList} />
         <Route path="/quiz/:slug" component={QuizPage} />
         <Route path="/daily-draw" component={DailyDraw} />
+        <Route path="/tools" component={Tools} />
+        <Route path="/assessments" component={Assessments} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
         <Route path="/:category/:slug" component={ArticlePage} />

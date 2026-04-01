@@ -27,6 +27,8 @@ export default function Footer() {
               <li><Link href="/start-here" className="text-[var(--mystic-cream)]/60 hover:text-[var(--antique-gold)] transition-colors text-sm no-underline">Start Here</Link></li>
               <li><Link href="/daily-draw" className="text-[var(--mystic-cream)]/60 hover:text-[var(--antique-gold)] transition-colors text-sm no-underline">Daily Draw</Link></li>
               <li><Link href="/quizzes" className="text-[var(--mystic-cream)]/60 hover:text-[var(--antique-gold)] transition-colors text-sm no-underline">Quizzes</Link></li>
+              <li><Link href="/assessments" className="text-[var(--mystic-cream)]/60 hover:text-[var(--antique-gold)] transition-colors text-sm no-underline">Assessments</Link></li>
+              <li><Link href="/tools" className="text-[var(--mystic-cream)]/60 hover:text-[var(--antique-gold)] transition-colors text-sm no-underline">Recommended Tools</Link></li>
             </ul>
           </div>
           <div>
@@ -65,6 +67,9 @@ export default function Footer() {
             <strong>Disclaimer:</strong> The content on The Living Tarot is for educational and entertainment purposes only. 
             It is not a substitute for professional medical, psychological, legal, or financial advice. 
             Tarot reading is a contemplative practice, not a diagnostic tool. Always consult qualified professionals for specific concerns.
+          </p>
+          <p className="text-xs text-[var(--mystic-cream)]/40 text-center mt-3">
+            As an Amazon Associate I earn from qualifying purchases.
           </p>
           <p className="text-xs text-[var(--mystic-cream)]/30 text-center mt-4">
             &copy; {new Date().getFullYear()} {SITE_CONFIG.title}. All rights reserved.

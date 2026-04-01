@@ -150,14 +150,15 @@ function slugify(text) {
     .substring(0, 80);
 }
 
-export async function generateNewArticles(count = 5) {
-  console.log(`[auto-gen] Generating ${count} new articles...`);
+export async function generateNewArticles(count = 5, options = {}) {
+  const isProductSpotlight = options.type === "product-spotlight";
+  console.log(`[auto-gen] Generating ${count} ${isProductSpotlight ? 'product spotlight' : 'regular'} articles...`);
 
   const articles = JSON.parse(readFileSync(ARTICLES_PATH, "utf-8"));
   const maxId = Math.max(...articles.map((a) => a.id));
   const existingSlugs = new Set(articles.map((a) => a.slug));
 
-  const topics = [
+  const regularTopics = [
     "The Hermit's Lantern: Finding Your Own Light in Darkness",
     "Reading Reversals: When Cards Speak in Whispers",
     "The Celtic Cross Revisited: A Modern Practitioner's Guide",
@@ -169,6 +170,16 @@ export async function generateNewArticles(count = 5) {
     "Building a Daily Card Practice That Actually Sticks",
     "The High Priestess and the Art of Not-Knowing",
   ];
+
+  const productTopics = [
+    "The Best Tarot Journals for Deepening Your Practice",
+    "Meditation Tools Every Tarot Reader Should Consider",
+    "Building a Sacred Reading Space: Essential Tools",
+    "Tarot Decks for the Serious Student: A Curated Guide",
+    "Books That Transform How You Read Tarot",
+  ];
+
+  const topics = isProductSpotlight ? productTopics : regularTopics;
 
   let generated = 0;
   for (let i = 0; i < count && i < topics.length; i++) {

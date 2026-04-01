@@ -11,10 +11,11 @@ export const SITE_CONFIG = {
   author: {
     name: "Kalesh",
     title: "Consciousness Teacher & Writer",
-    bio: "Kalesh explores the intersection of contemplative practice and symbolic reading. His work draws from Buddhism, Taoism, Vedanta, and neuroscience — treating tarot not as fortune-telling but as a mirror for consciousness.",
+    bio: "Kalesh is a mystic and spiritual advisor who brings ancient wisdom and depth to life's biggest decisions.",
     link: "https://kalesh.love",
     linkText: "Visit Kalesh's Website",
-    photo: "https://living-tarot.b-cdn.net/images/kalesh-photo.webp",
+    photo: "https://living-tarot.b-cdn.net/images/author/kalesh.webp",
+    photoFull: "https://living-tarot.b-cdn.net/images/author/kalesh-full.webp",
   },
   bunny: {
     storageZone: "living-tarot",

@@ -15,7 +15,7 @@ export default function Terms() {
         <h1 className="font-serif text-3xl md:text-4xl text-[var(--deep-purple)] mb-8">Terms of Service</h1>
 
         <div className="space-y-6 text-[var(--deep-purple)]/70 leading-relaxed text-sm">
-          <p><strong className="text-[var(--deep-purple)]">Last Updated:</strong> March 2026</p>
+          <p><strong className="text-[var(--deep-purple)]">Last Updated:</strong> April 2026</p>
 
           <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">Acceptance of Terms</h2>
           <p>
@@ -55,10 +55,7 @@ export default function Terms() {
             We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting on this page.
           </p>
 
-          <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">Contact</h2>
-          <p>
-            For questions about these terms, please visit <a href="https://kalesh.love" className="text-[var(--royal-purple)] underline">kalesh.love</a>.
-          </p>
+
         </div>
       </div>
     </Layout>

@@ -15,7 +15,7 @@ export default function Privacy() {
         <h1 className="font-serif text-3xl md:text-4xl text-[var(--deep-purple)] mb-8">Privacy Policy</h1>
 
         <div className="space-y-6 text-[var(--deep-purple)]/70 leading-relaxed text-sm">
-          <p><strong className="text-[var(--deep-purple)]">Last Updated:</strong> March 2026</p>
+          <p><strong className="text-[var(--deep-purple)]">Last Updated:</strong> April 2026</p>
 
           <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">Information We Collect</h2>
           <p>
@@ -44,6 +44,14 @@ export default function Privacy() {
             We use Bunny CDN (BunnyCDN, bunny.net) for content delivery, image hosting, and data storage including newsletter subscriber information. Bunny CDN stores data in secure data centers and processes information in accordance with GDPR requirements. We do not sell your personal information to third parties.
           </p>
 
+          <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">Affiliate Disclosure</h2>
+          <p>
+            As an Amazon Associate I earn from qualifying purchases.
+          </p>
+          <p>
+            This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. Some links on this site are affiliate links, meaning we may earn a small commission at no additional cost to you.
+          </p>
+
           <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">Data Security</h2>
           <p>
             We implement reasonable security measures to protect your information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
@@ -51,17 +59,12 @@ export default function Privacy() {
 
           <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">Your Rights</h2>
           <p>
-            You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us through our website.
+            You have the right to access, correct, or delete your personal information. To exercise these rights, please reach out through the channels available on our website.
           </p>
 
           <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">Changes to This Policy</h2>
           <p>
             We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.
-          </p>
-
-          <h2 className="font-serif text-xl text-[var(--deep-purple)] mt-8 mb-3">Contact</h2>
-          <p>
-            For questions about this privacy policy, please visit <a href="https://kalesh.love" className="text-[var(--royal-purple)] underline">kalesh.love</a>.
           </p>
         </div>
       </div>
